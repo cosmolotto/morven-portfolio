@@ -1,1 +1,817 @@
-<html><head><title>Morven - Full-Stack Developer</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0c;color:#e8e6e3;font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.c{max-width:900px;margin:0 auto;padding:0 2rem}nav{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}.logo{font-size:1.5rem;font-weight:700}.logo span{color:#c8ff00}.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 3rem}h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.1;letter-spacing:-0.03em;margin-bottom:1.5rem}h1 em{color:#c8ff00;font-style:italic}.sub{font-size:1.1rem;color:#7a7872;max-width:500px;margin-bottom:2rem}.btn{display:inline-block;padding:0.8rem 2rem;background:#c8ff00;color:#0a0a0c;font-weight:700;font-size:0.9rem;letter-spacing:0.05em;text-transform:uppercase;margin-right:1rem;margin-bottom:1rem}.btn-o{background:transparent;border:1px solid #333;color:#e8e6e3}.stats{display:flex;gap:3rem;flex-wrap:wrap;margin-top:3rem;padding-top:2rem;border-top:1px solid #222}.sn{font-size:2rem;color:#c8ff00}.sl{font-size:0.75rem;color:#7a7872;text-transform:uppercase;letter-spacing:0.1em}section{padding:4rem 3rem}.st{font-size:0.7rem;color:#c8ff00;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.5rem}.sh{font-size:clamp(1.5rem,3vw,2.5rem);margin-bottom:2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}.card{background:#111114;border:1px solid #222;padding:2rem;transition:0.3s}.card:hover{transform:translateY(-4px);border-color:#c8ff00}.card h3{font-size:1.2rem;margin:0.8rem 0}.card p{color:#7a7872;font-size:0.9rem;line-height:1.6}.tag{font-size:0.65rem;padding:0.2rem 0.5rem;background:rgba(200,255,0,0.08);color:#c8ff00;display:inline-block;margin:0.2rem}.cta{text-align:center;padding:5rem 2rem}.cta h2{font-size:clamp(2rem,4vw,3.5rem);margin-bottom:1rem}footer{padding:2rem 3rem;border-top:1px solid #222;text-align:center;font-size:0.75rem;color:#7a7872}</style></head><body><nav><div class="logo"><span>M</span>orven</div><a href="mailto:morven@proton.me" class="btn">Hire Me</a></nav><section class="hero"><div class="st">// Full-Stack Developer & Automation Engineer</div><h1>I build systems that <em>make money</em> while you sleep</h1><p class="sub">Trading bots, SaaS platforms, and intelligent automation — engineered to deliver measurable results.</p><a href="mailto:morven@proton.me" class="btn">Start a Project →</a><a href="#work" class="btn btn-o">See My Work</a><div class="stats"><div><div class="sn">9+</div><div class="sl">Projects Built</div></div><div><div class="sn">24/7</div><div class="sl">Automated Ops</div></div><div><div class="sn">Full</div><div class="sl">Stack</div></div></div></section><section id="services"><div class="st">// Services</div><h2 class="sh">What I Build</h2><div class="grid"><div class="card"><h3>Trading Bots</h3><p>Custom crypto trading bots with real-time analysis, signal generation, and risk management on Binance.</p><div><span class="tag">Python</span><span class="tag">Binance API</span><span class="tag">TA-Lib</span></div></div><div class="card"><h3>SaaS Platforms</h3><p>End-to-end SaaS with auth, payments, background workers, APIs, and cloud deployment.</p><div><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">Railway</span></div></div><div class="card"><h3>AI Automation</h3><p>Content generation pipelines, video production workflows, and intelligent data processing.</p><div><span class="tag">OpenAI</span><span class="tag">ElevenLabs</span><span class="tag">YouTube API</span></div></div><div class="card"><h3>Web Apps</h3><p>Modern responsive apps with secure auth, admin dashboards, and scalable architecture.</p><div><span class="tag">React</span><span class="tag">REST APIs</span><span class="tag">OAuth</span></div></div></div></section><section id="work" style="background:#111114"><div class="st">// Projects</div><h2 class="sh">Selected Work</h2><div class="grid"><div class="card"><h3>AlphaBot — Crypto Trading Bot</h3><p>Python bot running on Binance with multi-timeframe analysis, 9 indicators, and automated risk management.</p></div><div class="card"><h3>FinanceFlow — YouTube SaaS</h3><p>Automated YouTube video generation platform with AI voices, background generation, and scheduling.</p></div><div class="card"><h3>Cosmolotto — Browser Games</h3><p>6 mini-games with global leaderboard, user auth, and payment integration. Live at cosmolotto.vercel.app</p></div></div></section><section class="cta"><div class="st">// Let's Build</div><h2>Ready to automate your revenue?</h2><p class="sub" style="margin:1rem auto 2rem">morven@proton.me</p><a href="mailto:morven@proton.me" class="btn">Get In Touch →</a></section><footer>© 2026 Morven. Built with precision.</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morven — Full-Stack Developer & Automation Engineer</title>
+<meta name="description" content="I build trading bots, SaaS platforms, and automation systems that generate real results. Available for freelance work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a0a0c;
+  --bg-card: #111114;
+  --bg-card-hover: #18181c;
+  --text: #e8e6e3;
+  --text-dim: #7a7872;
+  --accent: #c8ff00;
+  --accent-dim: rgba(200, 255, 0, 0.08);
+  --border: #222228;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Grain overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: rgba(10, 10, 12, 0.7);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: color 0.3s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.6rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200, 255, 0, 0.3); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 3rem 4rem;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-label {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s forwards;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 900px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.4s forwards;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-desc {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  max-width: 560px;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.6s forwards;
+}
+
+.hero-actions {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.8s forwards;
+}
+
+.btn-outline {
+  padding: 0.7rem 1.6rem;
+  border: 1px solid var(--border);
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+  transition: all 0.3s;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.stats-bar {
+  margin-top: 5rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+  opacity: 0;
+  animation: fadeUp 0.8s 1s forwards;
+}
+
+.stat-item .stat-num {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.stat-item .stat-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+}
+
+/* SECTIONS */
+section { padding: 6rem 3rem; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+}
+
+/* SERVICES */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.4s;
+  transform-origin: left;
+}
+
+.service-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); }
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.service-tags {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--accent-dim);
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.project-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+.project-visual {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-visual.bot-bg {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0f1318 100%);
+}
+
+.project-visual.saas-bg {
+  background: linear-gradient(135deg, #0c0e14 0%, #131726 50%, #0c0e14 100%);
+}
+
+.project-visual-text {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  opacity: 0.6;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.project-body { padding: 2rem; }
+
+.project-body h3 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-type {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.project-body p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* PROCESS */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  counter-increment: step;
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--serif);
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.step h4 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.step p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* PRICING */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  transition: all 0.3s;
+}
+
+.price-card.featured {
+  border-color: var(--accent);
+  position: relative;
+}
+
+.price-card.featured::after {
+  content: 'POPULAR';
+  position: absolute;
+  top: -1px;
+  right: 2rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+.price-card h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-amount {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin: 1rem 0;
+}
+
+.price-amount span {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.price-features {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.price-features li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+}
+
+.price-features li::before {
+  content: '→ ';
+  color: var(--accent);
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  padding: 8rem 3rem;
+  position: relative;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(200, 255, 0, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-section h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 3rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: var(--accent); }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  section, .hero { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .stats-bar { gap: 2rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+
+/* SCROLL ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><span>M</span>orven</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact" class="cta-btn">Hire Me</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-label">// Full-Stack Developer & Automation Engineer</div>
+  <h1>I build systems that <em>make money</em> while you sleep</h1>
+  <p class="hero-desc">Trading bots, SaaS platforms, and intelligent automation — engineered from the ground up to deliver measurable results.</p>
+  <div class="hero-actions">
+    <a href="#contact" class="cta-btn">Start a Project →</a>
+    <a href="#work" class="btn-outline">See My Work</a>
+  </div>
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Production Systems</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Automated Operations</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Full</div>
+      <div class="stat-label">Stack Capability</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">&lt;48h</div>
+      <div class="stat-label">Response Time</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-label reveal">// What I Build</div>
+  <h2 class="section-title reveal">Services</h2>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">⚡</div>
+      <h3>Trading Bots & Algorithms</h3>
+      <p>Custom crypto and financial trading bots with real-time market analysis, signal generation, position management, and risk controls. Battle-tested on live exchanges.</p>
+      <div class="service-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Binance API</span>
+        <span class="tag">Technical Analysis</span>
+        <span class="tag">Risk Management</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🚀</div>
+      <h3>SaaS Platforms</h3>
+      <p>End-to-end SaaS development — from user authentication and payment processing to background workers, APIs, and deployment. Production-ready from day one.</p>
+      <div class="service-tags">
+        <span class="tag">Python / Flask</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Railway / Vercel</span>
+        <span class="tag">Stripe</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🤖</div>
+      <h3>AI & Automation</h3>
+      <p>Intelligent automation pipelines including AI-powered content generation, video production workflows, API integrations, and data processing systems.</p>
+      <div class="service-tags">
+        <span class="tag">OpenAI / Claude API</span>
+        <span class="tag">ElevenLabs</span>
+        <span class="tag">YouTube API</span>
+        <span class="tag">Automation</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🌐</div>
+      <h3>Web Applications</h3>
+      <p>Modern, responsive web applications with clean UIs, secure authentication (OAuth/Google), admin dashboards, and scalable architecture.</p>
+      <div class="service-tags">
+        <span class="tag">React</span>
+        <span class="tag">HTML/CSS/JS</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">OAuth</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background: var(--bg-card);">
+  <div class="section-label reveal">// Selected Work</div>
+  <h2 class="section-title reveal">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-visual bot-bg">
+        <div class="project-visual-text">
+  ┌─────────────────────────┐
+  │  ALPHABOT v10           │
+  │  ━━━━━━━━━━━━━━━━━━━   │
+  │  Signal: BUY  ██████   │
+  │  Pair: DOT/USDT        │
+  │  Confidence: 94.2%     │
+  │  P&L: +12.8%           │
+  └─────────────────────────┘</div>
+      </div>
+      <div class="project-body">
+        <div class="project-type">Algorithmic Trading</div>
+        <h3>AlphaBot</h3>
+        <p>A sophisticated crypto trading bot for Binance featuring multi-timeframe technical analysis, dynamic position sizing, configurable risk management, and real-time signal generation across multiple trading pairs.</p>
+        <div class="service-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Binance API</span>
+          <span class="tag">TA-Lib</span>
+          <span class="tag">Real-time Data</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-visual saas-bg">
+        <div class="project-visual-text">
+  ┌─────────────────────────┐
+  │  FINANCEFLOW             │
+  │  ━━━━━━━━━━━━━━━━━━━   │
+  │  Videos: 147 generated  │
+  │  Channels: 12 active    │
+  │  Status: ● Live         │
+  │  Revenue: Scaling...    │
+  └─────────────────────────┘</div>
+      </div>
+      <div class="project-body">
+        <div class="project-type">SaaS Platform</div>
+        <h3>FinanceFlow</h3>
+        <p>A YouTube automation SaaS that generates, produces, and publishes finance-themed videos with AI voiceovers, animated visuals, and automated scheduling — fully managed through a web dashboard.</p>
+        <div class="service-tags">
+          <span class="tag">Flask</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">ElevenLabs</span>
+          <span class="tag">Railway</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="section-label reveal">// How I Work</div>
+  <h2 class="section-title reveal">Process</h2>
+  <div class="process-steps">
+    <div class="step reveal">
+      <h4>Discovery</h4>
+      <p>We discuss your goals, constraints, and what success looks like. No fluff — just clarity.</p>
+    </div>
+    <div class="step reveal">
+      <h4>Architecture</h4>
+      <p>I map the technical foundation: stack decisions, data flow, APIs, and deployment strategy.</p>
+    </div>
+    <div class="step reveal">
+      <h4>Build</h4>
+      <p>Rapid development with daily updates. You see real progress, not wireframes and promises.</p>
+    </div>
+    <div class="step reveal">
+      <h4>Launch & Support</h4>
+      <p>Deployment, monitoring, and 30 days of post-launch support included with every project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="background: var(--bg-card);">
+  <div class="section-label reveal">// Investment</div>
+  <h2 class="section-title reveal">Pricing</h2>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <h3>Quick Build</h3>
+      <div class="price-amount">$500 <span>/ project</span></div>
+      <p style="color: var(--text-dim); font-size: 0.9rem;">Perfect for landing pages, simple automations, or API integrations.</p>
+      <ul class="price-features">
+        <li>1-2 week turnaround</li>
+        <li>Single-purpose tool or page</li>
+        <li>Source code included</li>
+        <li>14 days support</li>
+      </ul>
+      <a href="#contact" class="cta-btn" style="width:100%; justify-content:center;">Get Started</a>
+    </div>
+    <div class="price-card featured reveal">
+      <h3>Full Product</h3>
+      <div class="price-amount">$2,000 <span>/ project</span></div>
+      <p style="color: var(--text-dim); font-size: 0.9rem;">For SaaS apps, trading bots, or complex automation systems.</p>
+      <ul class="price-features">
+        <li>3-6 week turnaround</li>
+        <li>Full-stack application</li>
+        <li>Database + Auth + Deploy</li>
+        <li>30 days support</li>
+      </ul>
+      <a href="#contact" class="cta-btn" style="width:100%; justify-content:center;">Get Started</a>
+    </div>
+    <div class="price-card reveal">
+      <h3>Retainer</h3>
+      <div class="price-amount">$800 <span>/ month</span></div>
+      <p style="color: var(--text-dim); font-size: 0.9rem;">Ongoing development, maintenance, and feature additions.</p>
+      <ul class="price-features">
+        <li>20 hours / month</li>
+        <li>Priority response</li>
+        <li>Feature development</li>
+        <li>Monitoring & fixes</li>
+      </ul>
+      <a href="#contact" class="cta-btn" style="width:100%; justify-content:center;">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta-section">
+  <div class="section-label reveal">// Let's Build</div>
+  <h2 class="reveal">Ready to automate<br>your revenue?</h2>
+  <p class="reveal">Tell me about your project and I'll get back to you within 48 hours with a clear plan and timeline.</p>
+  <div class="reveal">
+    <a href="mailto:morven@proton.me" class="cta-btn" style="font-size:1rem; padding: 1rem 2.5rem;">morven@proton.me →</a>
+  </div>
+  <div style="margin-top: 2rem; display: flex; gap: 2rem; justify-content: center;" class="reveal">
+    <a href="https://github.com/cosmolotto" class="btn-outline">GitHub</a>
+    <a href="#" class="btn-outline">LinkedIn</a>
+    <a href="#" class="btn-outline">Twitter / X</a>
+  </div>
+</section>
+
+<footer>
+  <div class="copyright">© 2026 Morven. Built with precision.</div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Smooth nav background
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 100) {
+    nav.style.borderBottomColor = 'rgba(200, 255, 0, 0.1)';
+  } else {
+    nav.style.borderBottomColor = 'var(--border)';
+  }
+});
+</script>
+
+</body>
+</html>
